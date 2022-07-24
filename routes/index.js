@@ -30,11 +30,11 @@ router.get("/movies/:movieId", (req, res, next) => {
 
     Movie.findById(movieId)
     
-    .then((response) => {
-        console.log(response)
+    .then((unapeli) => {   // responde seria la peli correspondiente al id
+        console.log(unapeli)
 
         res.render("details.hbs", {
-           response
+           unapeli
         })
     })
     .catch((err) => {

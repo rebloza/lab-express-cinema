@@ -1,2 +1,19 @@
 <h1>Movies</h1>
    
+<div>
+    <img src="{{unapeli.image}}" alt="movies"  height="200px">
+    <a href="/movies">Go back</a>
+    <h3>{{unapeli.title}}</h3>
+    <h4>Stars</h4>
+    <ul>
+    {{#each unapeli.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+    </ul>
+    <p>{{unapeli.description}}</p>
+    <p>{{unapeli.showtimes}}</p> 
+
+
+</div> 
+
+
